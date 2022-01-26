@@ -4,7 +4,7 @@ const Promise = require('bluebird');
 const lambda = new AWS.Lambda({
   region: 'us-west-2'
 });
-
+var lambdaName = process.argv[2]; //value will be "banana"
 const cwd = process.cwd();
 const zipLambdaCommand = `
   cd ${cwd}/lambda/${lambdaName}/ &&
