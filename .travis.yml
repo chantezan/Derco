@@ -5,6 +5,9 @@ node_js:
 dist: xenial
 #Tell Travis that we ndddeed super user permissions  
 
+script:
+- echo "skipping tests"
+
 deploy:
   - provider: script
     script: node /deploy.js pruebaDerko production
