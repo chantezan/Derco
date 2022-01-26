@@ -10,7 +10,7 @@ script:
 
 deploy:
   - provider: script
-    script: node /deploy.js pruebaDerko production
+    script: node deploy.js pruebaDerko production
     skip_cleanup: true
     on:
-      branch: master
+      branch: main
