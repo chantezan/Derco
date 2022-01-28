@@ -10,7 +10,7 @@ script:
 
 deploy:
   provider: lambda
-  function_name: "pruebaDerco2"
+  function_name: "pruebaDerco3"
   region: "us-east-1"
   runtime: "nodejs12.x"
   handler_name: "handler"
