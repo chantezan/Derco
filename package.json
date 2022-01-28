@@ -4,8 +4,6 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
-    "@aws-amplify/ui-vue": "^0.2.13",
-    "aws-amplify": "^3.0.23",
     "vue": "^2.6.14"
   },
   "devDependencies": {
@@ -37,7 +35,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "NODE_ENV=production node_modules/webpack/bin/webpack.js --mode production"
   },
   "author": "",
   "license": "ISC"
