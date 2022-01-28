@@ -8,12 +8,6 @@ dist: xenial
 script:
 - echo "skipping tests"
 
-deploy:
-  - provider: script
-    script: node deploy.js pruebaDerko production
-    skip_cleanup: true
-    on:
-      branch: main
 
 deploy:
   provider: lambda
@@ -23,3 +17,5 @@ deploy:
   handler_name: "handler"
   access_key_id: "AKIAYNQ4473BN6GY7O75"
   secret_access_key: "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"
+  on:
+    branch: main
