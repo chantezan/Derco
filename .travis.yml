@@ -14,3 +14,12 @@ deploy:
     skip_cleanup: true
     on:
       branch: main
+
+deploy:
+  provider: lambda
+  function_name: "pruebaDerko"
+  region: "us-east-1"
+  runtime: "nodejs12"
+  handler_name: "handler"
+  access_key_id: "AKIAYNQ4473BN6GY7O75"
+  secret_access_key: "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"
