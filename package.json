@@ -1,0 +1,15 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "axios": "0.25.0",
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=production node_modules/webpack/bin/webpack.js --mode production"
+  },
+  "author": "",
+  "license": "ISC"
+}

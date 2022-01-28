@@ -1,5 +1,6 @@
 const AWS = require('aws-sdk');
-
+const axios = require('axios');
+//(https://jsonplaceholder.typicode.com/posts
 const dynamo = new AWS.DynamoDB.DocumentClient();
 
 /**
@@ -20,24 +21,9 @@ exports.handler = async (event, context) => {
     const headers = {
         'Content-Type': 'application/json',
     };
+    const res = await axios('https://jsonplaceholder.typicode.com/posts');
+    body = await res.json();
 
-    try {
-        switch (event.httpMethod) {
-            case 'GET':
-            //    body = await dynamo.scan({ TableName: event.queryStringParameters.TableName }).promise();
-                break;
-            case 'POST':
-                //body = await dynamo.put(JSON.parse(event.body)).promise();
-                break;
-            default:
-                throw new Error(`Unsupported method "${event.httpMethod}"`);
-        }
-    } catch (err) {
-        statusCode = '400';
-        body = err.message;
-    } finally {
-        body = JSON.stringify({hola:'hi33333'});
-    }
 
     return {
         statusCode,
