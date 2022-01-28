@@ -11,9 +11,9 @@ script:
 
 deploy:
   provider: lambda
-  function_name: "pruebaDerko"
+  function_name: "pruebaDerco"
   region: "us-east-1"
-  runtime: "nodejs12"
+  runtime: "nodejs12.x"
   handler_name: "handler"
   role: "arn:aws:iam::578807463618:role/service-role/rolLamda"
   access_key_id: $access_key_id
