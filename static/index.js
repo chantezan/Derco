@@ -1,8 +1,10 @@
 import Vue from 'vue';
 import App from './App.vue'
+import Amplify from 'aws-amplify';
+import '@aws-amplify/ui-vue';
+
+Vue.config.productionTip = false
 
 new Vue({
-  router,
-  store,
   render: h => h(App)
 }).$mount('#app')
