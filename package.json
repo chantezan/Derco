@@ -7,7 +7,7 @@
     "vue": "^2.6.14"
   },
   "devDependencies": {
-    "aws-sdk":"2.1065",
+    "aws-sdk": "2.1065",
     "bluebird": "3.7.2",
     "@babel/core": "^7.11.6",
     "@babel/plugin-transform-runtime": "^7.16.4",
@@ -28,14 +28,15 @@
     "vue-loader": "15.9.8",
     "vue-template-compiler": "^2.6.14",
     "webpack-bundle-tracker": "^0.4.2-beta",
+    "webpack": "4.42.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "3.11.2",
     "webpack-s3-plugin": "^1.0.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " HOT_RELOAD=1 webpack-dev-server --port 8082 --mode development"
-    },
+    "build": "NODE_ENV=production node_modules/webpack/bin/webpack.js --mode production"
+  },
   "author": "",
   "license": "ISC"
 }

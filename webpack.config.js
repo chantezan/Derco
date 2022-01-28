@@ -6,14 +6,10 @@ const { VueLoaderPlugin } = require('vue-loader');
 
 
 
-const autoprefixer = require("autoprefixer");
-
-
 module.exports = {
     context: __dirname,
     entry:  {
         main:'./static/index',
-        chat:'./static/chat',
     },
     mode: 'development',
     output: {
@@ -97,5 +93,4 @@ module.exports = {
 
 
 };
-
 
