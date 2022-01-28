@@ -1,9 +1,8 @@
 import Vue from 'vue';
-import Base from "./Base.vue";
+import App from './App.vue'
 
-const app = new Vue({
-    el: '#app',
-    components: {
-        Base,
-    }
-});
+new Vue({
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app')
