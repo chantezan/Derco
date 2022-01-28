@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
   console.log("asdasd")
     const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
     body = await res;
-    body =  JSON.stringify(body.data)
+    body =  JSON.stringify(body.data[0])
     return {
         statusCode,
         body,
