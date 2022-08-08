@@ -10,7 +10,7 @@ exports.handler = async (event, context) => {
         'Content-Type': 'application/json',
     };
     let data;
-  // fetch data from a url endpoint
+  // fetch data from a url endpointasdasd
   
   console.log("asdasd")
     const res = await axios.get('https://jsonplaceholder.typicode.com/posts');
